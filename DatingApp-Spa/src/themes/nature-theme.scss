@@ -1,0 +1,9 @@
+$dtapp-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$dtapp-nature-accent: mat-palette($mat-deep-purple, 300);
+$dtapp-nature-warn: mat-palette($mat-red, 600);
+
+$dtapp-nature-theme: mat-light-theme(
+  $dtapp-nature-primary,
+  $dtapp-nature-accent,
+  $dtapp-nature-warn
+);

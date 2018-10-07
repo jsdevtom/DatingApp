@@ -1,0 +1,9 @@
+$dtapp-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$dtapp-light-accent: mat-palette($mat-brown, 200);
+$dtapp-light-warn: mat-palette($mat-deep-orange, 200);
+
+$dtapp-light-theme: mat-light-theme(
+  $dtapp-light-primary,
+  $dtapp-light-accent,
+  $dtapp-light-warn
+);

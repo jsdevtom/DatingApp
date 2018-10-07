@@ -1,0 +1,5 @@
+$dtapp-primary: mat-palette($mat-indigo, 800, 300, 900);
+$dtapp-accent: mat-palette($mat-light-blue);
+$dtapp-warn: mat-palette($mat-pink, 600);
+
+$dtapp-theme: mat-light-theme($dtapp-primary, $dtapp-accent, $dtapp-warn);

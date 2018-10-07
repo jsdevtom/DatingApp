@@ -1,0 +1,44 @@
+<form [formGroup]="parentForm">
+
+  <mat-form-field>
+    <input
+      matInput
+      [placeholder]="'dtapp.login.enterUsername' | translate | capitalizeFirst"
+      type="text"
+      e2e-id="user-auth-form-username-input"
+      formControlName="username"
+      [required]="parentForm.get('username') | hasRequiredField"
+    >
+    <mat-error *ngIf="parentForm.get('username').hasError('required')">
+     {{'dtapp.login.usernameRequired' | translate | capitalizeFirst}}
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [placeholder]="'dtapp.login.enterPassword' | translate | capitalizeFirst"
+      [type]="hidePassword ? 'password' : 'text'"
+      e2e-id="user-auth-form-password-input"
+      formControlName="password"
+      [required]="parentForm.get('password') | hasRequiredField"
+    >
+    <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{hidePassword ? 'visibility_off': 'visibility'}}</mat-icon>
+  </mat-form-field>
+
+  <button
+    type="submit"
+    mat-raised-button
+    e2e-id="user-auth-form-submit-button"
+    color="primary"
+    class="login"
+    [ngClass]="routeAnimationsElements"
+  >
+    <span #contentWrapper >
+      <ng-content
+        select="[buttonText]"
+      ></ng-content>
+    </span>
+    <span #defaultButtonText *ngIf="contentWrapper.children.length == 0"> {{ 'dtapp.login.loginButton' | translate | capitalizeFirst }} </span>
+  </button>
+</form>

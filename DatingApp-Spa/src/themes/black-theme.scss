@@ -1,0 +1,9 @@
+$dtapp-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$dtapp-black-accent: mat-palette($mat-blue-grey, 400);
+$dtapp-black-warn: mat-palette($mat-red, 500);
+
+$dtapp-black-theme: mat-dark-theme(
+  $dtapp-black-primary,
+  $dtapp-black-accent,
+  $dtapp-black-warn
+);

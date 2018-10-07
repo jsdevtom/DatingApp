@@ -1,23 +1,37 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {ValueComponent} from './value/value.component';
-import {HttpClientModule} from "@angular/common/http";
+import { SharedModule } from '@app/shared';
+import { CoreModule } from '@app/core';
+
+import { SettingsModule } from './settings';
+import { StaticModule } from './static';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './features/home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ValueComponent
-  ],
   imports: [
+    // angular
+    BrowserAnimationsModule,
     BrowserModule,
+
+    // core & shared
+    CoreModule,
+    SharedModule,
+
+    // features
+    StaticModule,
+    SettingsModule,
+
+    // app
     AppRoutingModule,
-    HttpClientModule,
   ],
+  declarations: [AppComponent, HomeComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

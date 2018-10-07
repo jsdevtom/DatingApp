@@ -1,0 +1,9 @@
+{
+  "dtapp.login.title": "Login",
+  "dtapp.login.enterUsername": "enter your username",
+  "dtapp.login.usernameRequired": "username is required",
+  "dtapp.login.enterPassword": "enter your password",
+  "dtapp.login.loginButton": "login",
+  "dtapp.signUp.title": "Sign Up",
+  "dtapp.signUp.signUpButton": "sign up"
+}

@@ -1,0 +1,74 @@
+{
+  "dtapp.title": "App de namoro",
+  "dtapp.header.github": "Project Github Repository",
+  "dtapp.footer.changelog": "Mostrar changelog",
+  "dtapp.menu.about": "Sobre",
+  "dtapp.menu.features": "Características",
+  "dtapp.menu.examples": "Exemplos",
+  "dtapp.menu.settings": "Configurações",
+  "dtapp.menu.login": "Sign in",
+  "dtapp.menu.logout": "Logout",
+  "dtapp.about.change-theme": "Mudar Tema",
+  "dtapp.about.check-blogs": "ou estude nos blogs abaixo",
+  "dtapp.about.get-started": "Iniciar",
+  "dtapp.about.get-notified": "Seja notificado sobre novos lançamentos",
+  "dtapp.about.get-notified.follow": "Siga",
+  "dtapp.about.get-notified.description":
+    "Um bot do Twitter que ajuda você a manter-se atualizado com lançamentos de frameworks e bibliotecas populares do frontend!",
+  "dtapp.about.contributors": "Contribuidores",
+  "dtapp.about.contributors.description1":
+    "Quer começar a contribuir para o código aberto com o Angular?",
+  "dtapp.about.contributors.description2":
+    "Deixe sua marca e junte-se à crescente equipe de colaboradores!",
+  "dtapp.about.contributors.description3": "Começe olhando em",
+  "dtapp.about.contributors.description4": " e ",
+  "dtapp.about.contributors.issues": "abra issues",
+  "dtapp.about.contributors.guide": "Guia para contribuidores",
+  "dtapp.features.title": "Características",
+  "dtapp.features.documentation": "Docs",
+  "dtapp.features.guide": "Guide",
+  "dtapp.features.angular": "Framework moderno e poderoso",
+  "dtapp.features.angular-material": "Biblioteca de componentes Material Design",
+  "dtapp.features.angular-cli": "Interface de comando para o Angular",
+  "dtapp.features.ngrx":
+    "Fluxo de dados unidirecional alimentado por Observables RxJS",
+  "dtapp.features.ngxtranslate":
+    "Uma biblioteca de internacionalização para o Angular",
+  "dtapp.features.rxjs":
+    "Programação reativa com coleções assíncronas usando Observables",
+  "dtapp.features.bootstrap":
+    "Design responsivo com uma das maiores libs de UI do mundo",
+  "dtapp.features.typescript":
+    "Experiência de desenvolvimento superior, facilita o auto complete, a refatoração e causa menos bugs",
+  "dtapp.features.fontawesome": "Fácil de usar vector icons e social logos",
+  "dtapp.features.themes":
+    "Temas flexíveis que são suportados port provided e custom components",
+  "dtapp.features.themes.title": "Temas",
+  "dtapp.features.lazyloading":
+    "Rápido carregamento inicial com carregamento por demanda de feature modules",
+  "dtapp.features.lazyloading.title": "Carregamento por demanda",
+  "dtapp.settings.title": "Configurações",
+  "dtapp.settings.general": "Geral",
+  "dtapp.settings.general.placeholder": "Lingua",
+  "dtapp.settings.general.language.en": "Inglês",
+  "dtapp.settings.general.language.sk": "Eslovaco",
+  "dtapp.settings.general.language.de": "Alemão",
+  "dtapp.settings.general.language.pt-br": "Português",
+  "dtapp.settings.general.language.fr": "Francês",
+  "dtapp.settings.general.language.es": "Espanhol",
+  "dtapp.settings.themes": "Themes",
+  "dtapp.settings.themes.placeholder": "Color Theme",
+  "dtapp.settings.themes.blue": "Blue",
+  "dtapp.settings.themes.light": "Light",
+  "dtapp.settings.themes.nature": "Nature",
+  "dtapp.settings.themes.dark": "Dark",
+  "dtapp.settings.themes.saneago": "Saneago",
+  "dtapp.settings.themes.night-mode":
+    "Modo noturno automático (de 21:00 até 7:00)",
+  "dtapp.settings.animations": "Animações",
+  "dtapp.settings.animations.page": "Navegação com transição em toda pagina",
+  "dtapp.settings.animations.elements":
+    "Elementos de navegação deslizam para cima",
+  "dtapp.menu.configuracoes": "Configurações",
+  "dtapp.configuracoes.title": "Configurações"
+}

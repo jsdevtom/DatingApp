@@ -3,13 +3,16 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DatingApp-Spa": {
+    "dating-app": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "/src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "dtapp",
       "schematics": {
         "@schematics/angular:component": {
+          "styleext": "scss"
+        },
+        "@ngrx/schematics:component": {
           "styleext": "scss"
         }
       },
@@ -17,17 +20,30 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/DatingApp-Spa",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "favicon.ico",
+                "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "src/styles-app-loading.scss"
+              },
+              {
+                "input": "src/styles.scss"
+              }
             ],
             "scripts": []
           },
@@ -47,25 +63,55 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "bundle",
+                  "name": "polyfills",
+                  "baseline": "150kb",
+                  "warning": "50kb",
+                  "error": "100kb"
+                },
+                {
+                  "type": "bundle",
+                  "name": "vendor",
+                  "baseline": "800kb",
+                  "warning": "100kb",
+                  "error": "200kb"
+                },
+                {
+                  "type": "bundle",
+                  "name": "styles",
+                  "baseline": "250kb",
+                  "warning": "50kb",
+                  "error": "100kb"
+                },
+                {
+                  "type": "bundle",
+                  "name": "main",
+                  "baseline": "100kb",
+                  "warning": "50kb",
+                  "error": "100kb"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DatingApp-Spa:build"
+            "browserTarget": "dating-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "DatingApp-Spa:build:production"
+              "browserTarget": "dating-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DatingApp-Spa:build"
+            "browserTarget": "dating-app:build"
           }
         },
         "test": {
@@ -76,20 +122,39 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "styles.scss"
+              }
             ],
             "scripts": [],
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
             ]
+          },
+          "configurations": {
+            "test": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ]
+            }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
             ],
             "exclude": [
@@ -99,7 +164,7 @@
         }
       }
     },
-    "DatingApp-Spa-e2e": {
+    "dating-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,12 +172,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "DatingApp-Spa:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "DatingApp-Spa:serve:production"
-            }
+            "devServerTarget": "dating-app:serve"
           }
         },
         "lint": {
@@ -127,5 +187,8 @@
       }
     }
   },
-  "defaultProject": "DatingApp-Spa"
+  "defaultProject": "dating-app",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

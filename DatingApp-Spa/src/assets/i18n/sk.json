@@ -1,0 +1,72 @@
+{
+  "dtapp.title": "Datovania app",
+  "dtapp.header.github": "Github Repotitár Projektu",
+  "dtapp.footer.changelog": "Zobraziť list zmien",
+  "dtapp.menu.about": "Domov",
+  "dtapp.menu.features": "Vlastnosti",
+  "dtapp.menu.examples": "Príklady",
+  "dtapp.menu.settings": "Nastavenia",
+  "dtapp.menu.login": "Prihlásenie",
+  "dtapp.menu.logout": "Odhlásenie",
+  "dtapp.about.change-theme": "Zmeniť Tému",
+  "dtapp.about.check-blogs": "alebo si pozri blogy o",
+  "dtapp.about.get-started": "Ako začať",
+  "dtapp.about.get-notified": "Upozornenia na nové vydania",
+  "dtapp.about.get-notified.follow": "Sleduj",
+  "dtapp.about.get-notified.description":
+    ", Twitter bota ktorý ti pomôže zostať aktuálnym s vydaniami populárnych frontend frameworkov a knižníc!",
+  "dtapp.about.contributors": "Prispievatelia",
+  "dtapp.about.contributors.description1":
+    "Chceš začať prispievať do open source s Angularom?",
+  "dtapp.about.contributors.description2":
+    "Zanechaj svoju stopu a pridaj sa do rastúceho tímu prispievateľov!",
+  "dtapp.about.contributors.description3": "Začni tým že si pozrieš ",
+  "dtapp.about.contributors.description4": " a ",
+  "dtapp.about.contributors.issues": "list otvorených problémov ",
+  "dtapp.about.contributors.guide": "prispievateľskú príručku",
+  "dtapp.features.title": "Vlastnosti",
+  "dtapp.features.documentation": "Dok.",
+  "dtapp.features.guide": "Návod",
+  "dtapp.features.angular": "Moderný výkonný framework",
+  "dtapp.features.angular-material":
+    "Knižnica komponentov implementujúcich Material Dizajn",
+  "dtapp.features.angular-cli": "Rozhranie príkazového riadka pre Angular",
+  "dtapp.features.ngrx": "Jednosmerný tok dát s pomocou RxJS Observables",
+  "dtapp.features.rxjs":
+    "Reaktívne programovanie s asynchrónymi kolekciami s pomocou Observables",
+  "dtapp.features.ngxtranslate":
+    "Knižnica pre internacionalizáciu Angular applikácií",
+  "dtapp.features.bootstrap":
+    "Responzívny dizajn od ostrielanej, svetoznámej UI knižnice",
+  "dtapp.features.typescript":
+    "Vynikajúca podpora developerov, automatické dokončovanie kódu, refaktorovanie a menej chýb",
+  "dtapp.features.fontawesome":
+    "Ľahko použiteľné vektorové ikony a sociálne logá",
+  "dtapp.features.themes":
+    "Flexibilná podpora tém pre vstavané a vlastné komponenty",
+  "dtapp.features.themes.title": "Témy",
+  "dtapp.features.lazyloading":
+    "Rýchlejší štartovací čas s lenivým nahrávaním modulov",
+  "dtapp.features.lazyloading.title": "Lenivé nahrávanie",
+  "dtapp.settings.title": "Nastavenia",
+  "dtapp.settings.general": "Hlavné",
+  "dtapp.settings.general.placeholder": "Jazyk",
+  "dtapp.settings.general.language.en": "Angličtina",
+  "dtapp.settings.general.language.sk": "Slovenčina",
+  "dtapp.settings.general.language.de": "Nemčina",
+  "dtapp.settings.general.language.fr": "Francúzsky",
+  "dtapp.settings.general.language.es": "Španielsky",
+  "dtapp.settings.general.language.pt-br": "Portugalský",
+  "dtapp.settings.themes": "Témy",
+  "dtapp.settings.themes.placeholder": "Téma",
+  "dtapp.settings.themes.blue": "Modrá",
+  "dtapp.settings.themes.light": "Svetlá",
+  "dtapp.settings.themes.nature": "Prírodná",
+  "dtapp.settings.themes.dark": "Tmavá",
+  "dtapp.settings.themes.night-mode":
+    "Automatický nočný režim (od 21:00 do 7:00)",
+  "dtapp.settings.animations": "Animácie",
+  "dtapp.settings.animations.page": "Animácia celej stránky pri navigácii",
+  "dtapp.settings.animations.elements":
+    "Animácia elementov stránky pri navigácii"
+}

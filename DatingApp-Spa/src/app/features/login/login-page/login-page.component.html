@@ -1,0 +1,11 @@
+<mat-card class="login-card">
+  <h2>{{'dtapp.login.title' | translate}}</h2>
+
+  <dtapp-user-auth-form
+    class="login-form"
+    [parentForm]="form"
+    (submit)="onSubmit()"
+  >
+    <span buttonText> {{ 'dtapp.login.loginButton' | translate | capitalizeFirst }} </span>
+  </dtapp-user-auth-form>
+</mat-card>

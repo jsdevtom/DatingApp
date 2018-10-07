@@ -1,0 +1,75 @@
+{
+  "dtapp.examples": "Beispiele",
+  "dtapp.examples.menu.todos": "Aufgabenliste",
+  "dtapp.examples.menu.stocks": "Börse",
+  "dtapp.examples.menu.theming": "Theming",
+  "dtapp.examples.menu.auth": "Auth.",
+  "dtapp.examples.todos.input": "Ich werde...",
+  "dtapp.examples.todos.tooltip.add": "Eine neue Aufgabe hinzufügen",
+  "dtapp.examples.todos.tooltip.remove": "Erledigte Aufgaben entfernen",
+  "dtapp.examples.todos.list": "Aufgabenliste",
+  "dtapp.examples.todos.example": "Aufgabenbeispiel",
+  "dtapp.examples.todos.text1": "Das ist eine klassische",
+  "dtapp.examples.todos.text2": "Aufgabenliste.",
+  "dtapp.examples.todos.text3":
+    "Beispiel zum Hinzufügen, Umschalten, Entfernen und Filtern einer Aufgabenliste.",
+  "dtapp.examples.todos.text4": "Die Statusbehandlung wir mithilfe von",
+  "dtapp.examples.todos.text5":
+    "Modulen und mit Unterstützung von Lazy Loaded Reducer implementiert (das ist ein Lazy Loaded Feature-Modul).",
+  "dtapp.examples.todos.text6":
+    "Aufgaben bleiben im lokalen Speicher erhalten, so dass du deine Aufgaben auch bei späteren Besuchen sehen solltest, ...vorausgesetzt du verwendest denselben Browser.",
+  "dtapp.examples.todos.filter.all": "Alle",
+  "dtapp.examples.todos.filter.done": "Erledigt",
+  "dtapp.examples.todos.filter.active": "Aktiv",
+  "dtapp.examples.todos.filter.description": "Anzeigen",
+  "dtapp.examples.todos.filter.items": "Aufgaben",
+  "dtapp.examples.todos.filter.item": "Aufgabe",
+  "dtapp.examples.todos.filter.one": "ein",
+  "dtapp.examples.todos.filter.none": "keiner",
+  "dtapp.examples.todos.filter.notification": "Gefiltert nach",
+  "dtapp.examples.todos.remove.notification": "Erledigt aufgaben entfernt",
+  "dtapp.examples.todos.toggle.notification": "Umschalten von {{name}} nach",
+  "dtapp.examples.todos.added.notification": "{{name}} hinzugefügt",
+  "dtapp.examples.todos.undo": "Undo",
+  "dtapp.examples.stocks.title": "Börse",
+  "dtapp.examples.stocks.symbol": "Aktiensymbol",
+  "dtapp.examples.stocks.description":
+    "Hier ist ein gültiges Aktiensymbol anzugeben:",
+  "dtapp.examples.stocks.text1": "Das Börsenbeispiel zeigt, wie",
+  "dtapp.examples.stocks.text2": "Aufrufe mithilfe eines",
+  "dtapp.examples.stocks.text3": "Modules implementiert werden.",
+  "dtapp.examples.stocks.text4":
+    "Durch die Aktualisierung der Symbolabfrage mit einem anderen Symbol wird eine Aktion ausgelöst, die den Status mit Ladekennzeichen (Reduzierer) aktualisiert und den Effekt zum Abrufen des ausgewählten Aktienbestands auslöst.",
+  "dtapp.examples.stocks.text5":
+    "Aktionen werden entprellt und jede nachfolgende Anfrage wird die Vorherige löschen",
+  "dtapp.examples.stocks.text6":
+    "Nach Abschluss des Aufrufs werden Erfolgs- oder Fehleraktionen ausgegeben. Das Lade-Spinner wird entfernt und die Aktieninfo oder die Fehlermeldung wird angezeigt.",
+  "dtapp.examples.stocks.error1": "Aktienbestand",
+  "dtapp.examples.stocks.error2": "nicht gefunden",
+  "dtapp.examples.theming.parent.title":
+    "Thema beschränken mit verschachtelten Komponenten",
+  "dtapp.examples.theming.parent.description": "Eltern funktionieren!",
+  "dtapp.examples.theming.parent.text1":
+    "Themenstile werden nicht in der Eigenschaft",
+  "dtapp.examples.theming.parent.text2": "des Dekorators",
+  "dtapp.examples.theming.parent.text3": "sondern in der Hauptdatei",
+  "dtapp.examples.theming.parent.text4":
+    "der Komponente importiert. Aus diesem Grund werden Designstile",
+  "dtapp.examples.theming.parent.text5": "NICHT",
+  "dtapp.examples.theming.parent.text6":
+    "automatisch auf die Komponente beschränkt.",
+  "dtapp.examples.theming.parent.text7": "Wir müssen",
+  "dtapp.examples.theming.parent.text8": "spezifische",
+  "dtapp.examples.theming.parent.text9":
+    "Selektoren verwenden um zu verhindern, dass Stile ins Kind gelangen. Dies kann durch Verwendung von",
+  "dtapp.examples.theming.parent.text10":
+    "in CSS-Regeln erreicht werden, um ihre Spezifität zu erhöhen. Schau dir zum Beispiel die Themendatei dieser Komponente an:",
+  "dtapp.examples.theming.child.title": "h1 des Kindes",
+  "dtapp.examples.theming.child.subtitle": "sollte ohne Stil sein",
+  "dtapp.examples.theming.child.description": "Kind funktioniert!",
+  "dtapp.examples.auth.title": "Authentifizierte Komponente",
+  "dtapp.examples.auth.description1":
+    "Diese Komponente ist nur für authentifizierte Benutzer zugänglich",
+  "dtapp.examples.auth.description2":
+    "Das Abmelden führt dazu, dass der Benutzer zum Startbildschirm weitergeleitet wird, wenn die Route nur für authentifizierte Benutzer zugänglich ist"
+}

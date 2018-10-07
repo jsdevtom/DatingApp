@@ -1,0 +1,114 @@
+{
+  "dtapp.examples": "Exemples",
+  "dtapp.examples.menu.todos": "Tâches",
+  "dtapp.examples.menu.stocks": "Stocks",
+  "dtapp.examples.menu.theming": "Theming",
+  "dtapp.examples.menu.crud": "CRUD",
+  "dtapp.examples.menu.auth": "Authentification",
+  "dtapp.examples.todos.input": "Je vais...",
+  "dtapp.examples.todos.tooltip.add": "Ajouter une nouvelle tâche",
+  "dtapp.examples.todos.tooltip.remove": "Supprimer les tâches terminées",
+  "dtapp.examples.todos.list": "Liste des tâches",
+  "dtapp.examples.todos.example": "Exemple de tâches",
+  "dtapp.examples.todos.text1": "Ceci est un exemple classique de",
+  "dtapp.examples.todos.text2": "tâches",
+  "dtapp.examples.todos.text3":
+    "avec prise en charge de l'ajout, du basculement, de la suppression et du filtrage des éléments à faire.",
+  "dtapp.examples.todos.text4":
+    "La gestion des états est implémentée à l'aide du module",
+  "dtapp.examples.todos.text5":
+    "et prend en charge les réducteurs chargés à la demande (il s'agit d'un module de fonctions chargé à la demande).",
+  "dtapp.examples.todos.text6":
+    "Toutes les tâches sont conservées dans le stockage local, vous devriez donc voir vos tâches lors de visites ultérieures lorsque vous utilisez le même navigateur.",
+  "dtapp.examples.todos.filter.all": "Toutes",
+  "dtapp.examples.todos.filter.done": "Terminées",
+  "dtapp.examples.todos.filter.active": "Actives",
+  "dtapp.examples.todos.filter.description": "Affiche",
+  "dtapp.examples.todos.filter.items": "tâches",
+  "dtapp.examples.todos.filter.item": "tâche",
+  "dtapp.examples.todos.filter.one": "un",
+  "dtapp.examples.todos.filter.none": "nul",
+  "dtapp.examples.todos.filter.notification": "Filtré à",
+  "dtapp.examples.todos.remove.notification": "Terminées tâches supprimées",
+  "dtapp.examples.todos.toggle.notification": "basculer {{name}} à",
+  "dtapp.examples.todos.added.notification": "{{name}} ajouté",
+  "dtapp.examples.todos.undo": "Annuler",
+  "dtapp.examples.stocks.title": "Bourse",
+  "dtapp.examples.stocks.symbol": "Symbole boursier",
+  "dtapp.examples.stocks.description":
+    "Veuillez fournir un symbole boursier valide tel que:",
+  "dtapp.examples.stocks.text1":
+    "L'exemple boursier montre comment implémenter les requêtes",
+  "dtapp.examples.stocks.text2": "à l'aide du module",
+  "dtapp.examples.stocks.text3": ".",
+  "dtapp.examples.stocks.text4":
+    "La mise à jour de la requête de symbole avec un symbole différent émet une action qui met à jour l'état avec l'indicateur de chargement (réducteur) et déclenche un effet pour la récupération du symbole boursier sélectionné.",
+  "dtapp.examples.stocks.text5":
+    "Les actions sont temporisées et chaque demande ultérieure annulera la précédente en utilisant",
+  "dtapp.examples.stocks.text6":
+    "Les actions de réussite ou d'erreur sont émises à la fin de la demande. Le chargement de spinner est supprimé et les informations stockées ou le message d'erreur s'affiche.",
+  "dtapp.examples.stocks.error1": "Symbole boursier",
+  "dtapp.examples.stocks.error2": "introuvable",
+  "dtapp.examples.theming.parent.title":
+    "Portée du thème avec des composants imbriqués",
+  "dtapp.examples.theming.parent.description": "Le parent fonctionne!",
+  "dtapp.examples.theming.parent.text1":
+    "Les styles de thème ne sont pas importés dans la propriété du composant",
+  "dtapp.examples.theming.parent.text2": "du décorateur",
+  "dtapp.examples.theming.parent.text3": "mais dans le fichier",
+  "dtapp.examples.theming.parent.text4":
+    "principal. De ce fait, les styles de thème ne sont",
+  "dtapp.examples.theming.parent.text5": "PAS",
+  "dtapp.examples.theming.parent.text6":
+    "automatiquement dans la portée du composant.",
+  "dtapp.examples.theming.parent.text7": "Nous devons utiliser des sélecteurs",
+  "dtapp.examples.theming.parent.text8": "spécifiques",
+  "dtapp.examples.theming.parent.text9":
+    "pour empêcher les styles de s'infiltrer dans les composants enfant. Cela peut être réalisé en utilisant",
+  "dtapp.examples.theming.parent.text10":
+    "dans les règles CSS pour améliorer leur spécificité. Par exemple, regardez le fichier de thème de ce composant:",
+  "dtapp.examples.theming.child.title": "enfant h1",
+  "dtapp.examples.theming.child.subtitle": "devrait être non stylé",
+  "dtapp.examples.theming.child.description": "L'enfant fonctionne!",
+  "dtapp.examples.crud.title": "CRUD livres avec @ngrx/entity",
+  "dtapp.examples.crud.subtitle1": "Vos livres",
+  "dtapp.examples.crud.subtitle2": "Editeur de livre",
+  "dtapp.examples.crud.placeholder1": "Titre",
+  "dtapp.examples.crud.placeholder2": "Auteur",
+  "dtapp.examples.crud.placeholder3": "Description",
+  "dtapp.examples.crud.text":
+    "Les livres peuvent être gérés dans cet éditeur et sont ajoutés, mis à jour, supprimés et sélectionnés via ",
+  "dtapp.examples.crud.error": "est requis",
+  "dtapp.examples.crud.add": "Ajouter un nouveau livre",
+  "dtapp.examples.crud.new": "Nouveau",
+  "dtapp.examples.crud.save": "Sauver",
+  "dtapp.examples.form.title":
+    "Formulaire réactif avec un constructeur de formulaire",
+  "dtapp.examples.form.subtitle1": "Le formulaire",
+  "dtapp.examples.form.subtitle2": "informations commerciales",
+  "dtapp.examples.form.autosave": "Sauvegarde automatique",
+  "dtapp.examples.form.placeholder1": "Pseudo",
+  "dtapp.examples.form.placeholder2": "Mot de passe",
+  "dtapp.examples.form.placeholder3": "E-mail",
+  "dtapp.examples.form.placeholder4": "Description",
+  "dtapp.examples.form.placeholder5": "Date de naissance",
+  "dtapp.examples.form.error1": "est requis",
+  "dtapp.examples.form.error2": "doit être valide",
+  "dtapp.examples.form.error3": "doit être plus long que",
+  "dtapp.examples.form.error4": "doit être plus petit que",
+  "dtapp.examples.form.text1": "Solliciter un cadeau.",
+  "dtapp.examples.form.text2": "Évaluer ce formulaire:",
+  "dtapp.examples.form.text3":
+    "Vous devez solliciter un cadeau pour voir plus d'iformations.",
+  "dtapp.examples.form.text4": "Cadeau envoyé!",
+  "dtapp.examples.form.text5": "Pas de cadeau envoyé.",
+  "dtapp.examples.form.text6": "Clap",
+  "dtapp.examples.form.reset": "Réinitialiser",
+  "dtapp.examples.form.save": "Sauver",
+  "dtapp.examples.form.send": "Envoyer",
+  "dtapp.examples.auth.title": "Composant authentifié",
+  "dtapp.examples.auth.description1":
+    "Ce composant est uniquement accessible aux utilisateurs authentifiés",
+  "dtapp.examples.auth.description2":
+    "La déconnexion provoque la redirection de l'utilisateur vers l'écran d'accueil si la visite de la page n'est accessible qu'aux utilisateurs authentifiés"
+}
