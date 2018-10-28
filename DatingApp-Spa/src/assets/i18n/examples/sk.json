@@ -1,0 +1,74 @@
+{
+  "dtapp.examples": "Príklady",
+  "dtapp.examples.menu.todos": "Zoznam úloh",
+  "dtapp.examples.menu.stocks": "Akcie",
+  "dtapp.examples.menu.theming": "Témy",
+  "dtapp.examples.menu.auth": "Pre prihlásených",
+  "dtapp.examples.todos.input": "Plánujem urobiť...",
+  "dtapp.examples.todos.tooltip.add": "Pridaj novú úlohu",
+  "dtapp.examples.todos.tooltip.remove": "Odstráň dokončené úlohy",
+  "dtapp.examples.todos.list": "List úloh",
+  "dtapp.examples.todos.example": "Príklad listu úloh",
+  "dtapp.examples.todos.text1": "Toto je klasický príklad",
+  "dtapp.examples.todos.text2": "listu úloh",
+  "dtapp.examples.todos.text3":
+    "s podporou pre pridávanie, dokončovanie, odstraňovanie a filtrovanie úloh.",
+  "dtapp.examples.todos.text4":
+    "Spravovanie stavu aplikácie je implementované s pomocou",
+  "dtapp.examples.todos.text5":
+    "modulu a s podporou pre lenivo načítané reducery (toto je lenivo načítaný modul).",
+  "dtapp.examples.todos.text6":
+    "Úlohy sú uložené aj v lokálnom úložisku prehliadača čiže Vaše úlohy budú dostupné aj pri ďalších návštevách aplikácie pri použití toho istého prehliadača.",
+  "dtapp.examples.todos.filter.all": "Všetky",
+  "dtapp.examples.todos.filter.done": "Hotové",
+  "dtapp.examples.todos.filter.active": "Aktívne",
+  "dtapp.examples.todos.filter.description": "Zobrazené",
+  "dtapp.examples.todos.filter.items": "úlohy",
+  "dtapp.examples.todos.filter.one": "jeden",
+  "dtapp.examples.todos.filter.none": "nič",
+  "dtapp.examples.todos.filter.notification": "Filtrované na",
+  "dtapp.examples.todos.remove.notification": "Dokončené úlohy noli odstránené",
+  "dtapp.examples.todos.toggle.notification": "Zmeniť stav {{name}} na",
+  "dtapp.examples.todos.added.notification": "Úloha {{name}} pridaná",
+  "dtapp.examples.todos.undo": "Späť",
+  "dtapp.examples.stocks.title": "Akciový trh",
+  "dtapp.examples.stocks.symbol": "Symbol akcie",
+  "dtapp.examples.stocks.description":
+    "Prosím, poskytnite existujúci symbol akciového trhu ako:",
+  "dtapp.examples.stocks.text1":
+    "Príklad akciového trhu ukazuje ako implementovať",
+  "dtapp.examples.stocks.text2": "volania pomocou",
+  "dtapp.examples.stocks.text3": "modulu.",
+  "dtapp.examples.stocks.text4":
+    "Zmena symbolu v zadávacom poli bude viesť k vytvoreniu akcie, ktorá zmení stav aplikácie, nastaví nahrávanie (v reduceri) a spustí efekt na načítanie ceny zvolených akcií.",
+  "dtapp.examples.stocks.text5":
+    "Každé nasledujúce volanie zruší to predošlé na zlepšenie výkonu pomocou",
+  "dtapp.examples.stocks.text6":
+    "'Úspech' alebo 'chyba' akcie sú vytvorené na konci každého volania. Načítavací indikátor je odstránený a aplikácia zobrazí informácie o cene akcií alebo chybovú správu v prípade zlyhania volania.",
+  "dtapp.examples.stocks.error1": "Akcie so symbolom",
+  "dtapp.examples.stocks.error2": "neboli nájdené",
+  "dtapp.examples.theming.parent.title":
+    "Určovanie rozsahu tém s vnorenými komponentami",
+  "dtapp.examples.theming.parent.description": "rodič funguje!",
+  "dtapp.examples.theming.parent.text1":
+    "Témy niesú importované pomocou komponentovej",
+  "dtapp.examples.theming.parent.text2": "vlastnosti definovanej v",
+  "dtapp.examples.theming.parent.text3": "dekorátore, ale v hlavnom",
+  "dtapp.examples.theming.parent.text4": "súbore. Toto je dôvod prečo témy ",
+  "dtapp.examples.theming.parent.text5": "NIE SÚ",
+  "dtapp.examples.theming.parent.text6": "obmedzené len pre šablónu komponentu.",
+  "dtapp.examples.theming.parent.text7": "Toto je dôvod prečo musíme použiť",
+  "dtapp.examples.theming.parent.text8": "špecifický",
+  "dtapp.examples.theming.parent.text9":
+    "selektor, aby sme predišli situácii, keď rodičové štýly presiaknu do dieťaťa. Toto sa dá dosiahnuť použitím",
+  "dtapp.examples.theming.parent.text10":
+    "v css na zvýšenie ich špecifity. Napríklad, v témovom súbore tohto komponentu:",
+  "dtapp.examples.theming.child.title": "h1 dieťaťa",
+  "dtapp.examples.theming.child.subtitle": "by malo byť bez štýlov",
+  "dtapp.examples.theming.child.description": "dieťa funguje!",
+  "dtapp.examples.auth.title": "Komponent pre prihlásených používateľov",
+  "dtapp.examples.auth.description1":
+    "Tento komponent je dostupný len pre prihlásených používateľov",
+  "dtapp.examples.auth.description2":
+    "Odhlásenie sa zo systému spôsobí presmerovanie použávateľa na domovskú stránku"
+}

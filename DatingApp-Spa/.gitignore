@@ -7,6 +7,7 @@
 
 # dependencies
 /node_modules
+yarn.lock
 
 # IDEs and editors
 /.idea
@@ -19,10 +20,10 @@
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 
 # misc
 /.sass-cache
@@ -30,9 +31,13 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
-yarn-error.log
 testem.log
 /typings
+
+# e2e
+/e2e/src/*.js
+/e2e/src/*.map
+/cypress/screenshots
 
 # System Files
 .DS_Store

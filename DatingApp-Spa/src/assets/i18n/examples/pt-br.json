@@ -1,0 +1,73 @@
+{
+  "dtapp.examples": "Exemplos",
+  "dtapp.examples.menu.forms": "Formulários",
+  "dtapp.examples.menu.todos": "Todos",
+  "dtapp.examples.menu.stocks": "Stocks",
+  "dtapp.examples.menu.theming": "Theming",
+  "dtapp.examples.menu.auth": "Auth",
+  "dtapp.examples.todos.input": "Eu vou fazer...",
+  "dtapp.examples.todos.tooltip.add": "Adicionar novo todo",
+  "dtapp.examples.todos.tooltip.remove": "Remover todos feitos",
+  "dtapp.examples.todos.list": "lista de todos",
+  "dtapp.examples.todos.example": "Todo example",
+  "dtapp.examples.todos.text1": "Este é um",
+  "dtapp.examples.todos.text2": "todo",
+  "dtapp.examples.todos.text3":
+    "clássico com suporte para adicionar, alternar, remover e filtrar os itens de tarefas.",
+  "dtapp.examples.todos.text4": "A manipulação de estado é implementada usando",
+  "dtapp.examples.todos.text5": "module",
+  "dtapp.examples.todos.text6":
+    "Todos são mantidos no local storage, portanto, você deve ver seus itens também em visitas posteriores ao usar o mesmo navegador.",
+  "dtapp.examples.todos.filter.all": "Todos",
+  "dtapp.examples.todos.filter.done": "Feito",
+  "dtapp.examples.todos.filter.active": "Ativos",
+  "dtapp.examples.todos.filter.description": "Mostrando",
+  "dtapp.examples.todos.filter.items": "todos",
+  "dtapp.examples.todos.filter.item": "todo",
+  "dtapp.examples.todos.filter.one": "único",
+  "dtapp.examples.todos.filter.none": "nenhum",
+  "dtapp.examples.todos.filter.notification": "Filtrado para",
+  "dtapp.examples.todos.remove.notification": "Removido tudo feito",
+  "dtapp.examples.todos.toggle.notification": "alternou de {{name}} para",
+  "dtapp.examples.todos.added.notification": "{{name}} adicionado",
+  "dtapp.examples.todos.undo": "Desfazer",
+  "dtapp.examples.stocks.title": "Mercado de Ações",
+  "dtapp.examples.stocks.symbol": "Simbolo",
+  "dtapp.examples.stocks.description":
+    "Por favor forneça um simbolo do mercado de ações válido como:",
+  "dtapp.examples.stocks.text1":
+    "O examplo de mercado de ações mostra como implementar",
+  "dtapp.examples.stocks.text2": "requests usando",
+  "dtapp.examples.stocks.text3": "module.",
+  "dtapp.examples.stocks.text4":
+    "A atualização da consulta de símbolo com símbolo diferente emitirá uma ação que atualiza o estado com o sinalizador de carregamento (handler) e aciona a Action para recuperar o estoque selecionado.",
+  "dtapp.examples.stocks.text5":
+    "As Actions são executadas e a cada request subsequente vai ser cancelada a anterior usando",
+  "dtapp.examples.stocks.text6":
+    "Actions com sucesso ou erro são emitidas no final da request. O Loading spinner é removido e a informação do item da bolsa ou mensagem de erro é mostrada.",
+  "dtapp.examples.stocks.error1": "Item",
+  "dtapp.examples.stocks.error2": "não encontrado",
+  "dtapp.examples.theming.parent.title": "Escopo de temas com nested components",
+  "dtapp.examples.theming.parent.description": "parent funcionou!",
+  "dtapp.examples.theming.parent.text1": "Theme styles não são importados nos",
+  "dtapp.examples.theming.parent.text2": "que é uma propriedade",
+  "dtapp.examples.theming.parent.text3": "decorator, mas no nosso arquivo",
+  "dtapp.examples.theming.parent.text4": ". Por conta disso, styles dos temas",
+  "dtapp.examples.theming.parent.text5": "Não",
+  "dtapp.examples.theming.parent.text6":
+    "sao incorporados ao component automaticamente.",
+  "dtapp.examples.theming.parent.text7": "Nos temos que usar",
+  "dtapp.examples.theming.parent.text8": "specific",
+  "dtapp.examples.theming.parent.text9":
+    "selectors para prever styles de leaking dentro de child components. Isto pode ser conseguido usando",
+  "dtapp.examples.theming.parent.text10":
+    "em regras de css para aumentar a sua especificidade.  Por exemplo olhe o arquivo de tema deste component:",
+  "dtapp.examples.theming.child.title": "childs h1",
+  "dtapp.examples.theming.child.subtitle": "precisa ser sem style",
+  "dtapp.examples.theming.child.description": "child funcionou!",
+  "dtapp.examples.auth.title": "Authenticated component",
+  "dtapp.examples.auth.description1":
+    "Este component é acessado apenas por usuarios autenticados",
+  "dtapp.examples.auth.description2":
+    "Dando logout vai causar redirecionamento do usuário para home screen se ele estiver visitando uma rota acessivel apenas para usuários autenticados"
+}

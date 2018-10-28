@@ -1,0 +1,83 @@
+{
+  "dtapp.title": "Dating App",
+  "dtapp.home-title": "Find your match",
+  "dtapp.header.github": "Project Github Repository",
+  "dtapp.footer.changelog": "Show changelog",
+  "dtapp.menu.about": "About",
+  "dtapp.menu.features": "Features",
+  "dtapp.menu.examples": "Examples",
+  "dtapp.menu.settings": "Settings",
+  "dtapp.menu.login": "Login",
+  "dtapp.menu.signup": "Sign up",
+  "dtapp.menu.logout": "Logout",
+  "dtapp.about.change-theme": "Change Theme",
+  "dtapp.about.check-blogs": "or check blogs about",
+  "dtapp.about.get-started": "Get started",
+  "dtapp.about.get-notified": "Get notified about new releases",
+  "dtapp.about.get-notified.follow": "Follow",
+  "dtapp.about.get-notified.description":
+    "a Twitter bot that helps you to stay up to date with releases of popular frontend frameworks & libraries!",
+  "dtapp.about.contributors": "Contributors",
+  "dtapp.about.contributors.description1":
+    "Want to start contributing to open source with Angular?",
+  "dtapp.about.contributors.description2":
+    "Leave your mark and join the growing team of contributors!",
+  "dtapp.about.contributors.description3": "Get started by having a look on ",
+  "dtapp.about.contributors.description4": " and ",
+  "dtapp.about.contributors.issues": "open issues",
+  "dtapp.about.contributors.guide": "Contributor guide",
+  "dtapp.features.title": "Features",
+  "dtapp.features.documentation": "Docs",
+  "dtapp.features.guide": "Guide",
+  "dtapp.features.angular": "Modern powerful framework",
+  "dtapp.features.angular-material": "Material design component library",
+  "dtapp.features.angular-cli": "A command line interface for Angular",
+  "dtapp.features.ngrx": "One way data flow powered by RxJS Observables",
+  "dtapp.features.ngxtranslate": "An internationalization library for Angular",
+  "dtapp.features.rxjs":
+    "Reactive programming with async collections using Observables",
+  "dtapp.features.bootstrap":
+    "Responsive layout from battle tested, world most famous UI library",
+  "dtapp.features.typescript":
+    "Superior developer experience, code completion, refactoring and less bugs",
+  "dtapp.features.fontawesome": "Easy to use vector icons and social logos",
+  "dtapp.features.themes":
+    "Flexible theming support for provided and custom components",
+  "dtapp.features.themes.title": "Themes",
+  "dtapp.features.lazyloading":
+    "Faster startup time with lazy loaded feature modules",
+  "dtapp.features.lazyloading.title": "Lazy loading",
+  "dtapp.features.cypress":
+    "Cypress is a next generation front end testing tool built for the modern web.",
+  "dtapp.settings.title": "Settings",
+  "dtapp.settings.general": "General",
+  "dtapp.settings.general.placeholder": "Language",
+  "dtapp.settings.general.language.en": "English",
+  "dtapp.settings.general.language.sk": "Slovak",
+  "dtapp.settings.general.language.de": "German",
+  "dtapp.settings.general.language.fr": "French",
+  "dtapp.settings.general.language.es": "Spanish",
+  "dtapp.settings.general.language.pt-br": "Portuguese",
+  "dtapp.settings.themes": "Themes",
+  "dtapp.settings.themes.placeholder": "Color Theme",
+  "dtapp.settings.themes.blue": "Blue",
+  "dtapp.settings.themes.light": "Light",
+  "dtapp.settings.themes.nature": "Nature",
+  "dtapp.settings.themes.dark": "Dark",
+  "dtapp.settings.themes.night-mode": "Auto night mode (from 21:00 to 7:00)",
+  "dtapp.settings.themes.sticky-header": "Sticky header",
+  "dtapp.settings.animations": "Animations",
+  "dtapp.settings.animations.page": "Navigation whole page transition",
+  "dtapp.settings.animations.elements": "Navigation page elements slide up",
+
+  "dtapp.login.unauthorized": "Could not login with those credentials",
+
+  "dtapp.login.successfulLogin": "Successfully logged in",
+  "dtapp.login.successfulLogout": "Successfully logged out",
+
+  "dtapp.signup.usernameAlreadyExists": "That username already exists. Please try another username",
+  "dtapp.signup.successfulSignup": "Successfully signed up.",
+
+  "dtapp.unexpectedError":
+      "An unexpected error occured, please try again later."
+}

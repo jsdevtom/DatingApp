@@ -1,0 +1,16 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1>{{ 'dtapp.home-title' | translate }}</h1>
+      <div class="get-started" [ngClass]="routeAnimationsElements">
+        <span>Come on in to view all your matches... All you need to do is sign up</span>
+
+        <div class="button-section">
+          <button mat-raised-button color="primary" routerLink="/sign-up">Register</button>
+          <button mat-button color="primary" routerLink="/learn-more">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
