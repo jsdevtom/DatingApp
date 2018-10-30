@@ -14,7 +14,7 @@ import {
   TitleService,
   selectAuth,
   routeAnimations,
-  AppState,
+  AppState, selectIsAuthenticated,
 } from '@app/core';
 import { environment as env } from '@env/environment';
 
@@ -90,8 +90,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private subscribeToIsAuthenticated() {
     this.store
-      .pipe(select(selectAuth), takeUntil(this.unsubscribe$))
-      .subscribe(auth => (this.isAuthenticated = auth.isAuthenticated));
+      .pipe(select(selectIsAuthenticated), takeUntil(this.unsubscribe$))
+      .subscribe(isAuthenticated => (this.isAuthenticated = isAuthenticated));
   }
 
   private subscribeToSettings() {
