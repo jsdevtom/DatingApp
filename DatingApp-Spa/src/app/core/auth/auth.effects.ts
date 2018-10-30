@@ -29,6 +29,7 @@ import {
 import { HttpErrorResponse } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
+import { standardSnackBarDuration } from '@app/core/ui.constants';
 
 export const AUTH_KEY = 'AUTH';
 export const TOKEN_KEY = 'TOKEN';
@@ -71,7 +72,7 @@ export class AuthEffects {
       this.snackBar.open(
         await this.translate.get('dtapp.login.successfulLogin').toPromise(),
         null,
-        { duration: 3000 },
+        { duration: standardSnackBarDuration },
       );
     }),
   );
@@ -88,7 +89,7 @@ export class AuthEffects {
               await this.translate.get('dtapp.login.unauthorized').toPromise(),
               'Ok',
               {
-                duration: 3000,
+                duration: standardSnackBarDuration,
               },
             );
             break;
@@ -97,7 +98,7 @@ export class AuthEffects {
               await this.translate.get('dtapp.unexpectedError').toPromise(),
               'Ok',
               {
-                duration: 3000,
+                duration: standardSnackBarDuration,
               },
             );
         }
@@ -115,7 +116,7 @@ export class AuthEffects {
       this.snackBar.open(
         await this.translate.get('dtapp.login.successfulLogout').toPromise(),
         null,
-        { duration: 3000 },
+        { duration: standardSnackBarDuration },
       );
     }),
   );
@@ -144,7 +145,7 @@ export class AuthEffects {
       const message = await this.translate
         .get('dtapp.signup.successfulSignup')
         .toPromise();
-      this.snackBar.open(message, null, { duration: 3000 });
+      this.snackBar.open(message, null, { duration: standardSnackBarDuration });
     }),
   );
 
@@ -163,7 +164,7 @@ export class AuthEffects {
                 .toPromise(),
               'Ok',
               {
-                duration: 3000,
+                duration: standardSnackBarDuration,
               },
             );
             break;
@@ -172,7 +173,7 @@ export class AuthEffects {
               await this.translate.get('dtapp.unexpectedError').toPromise(),
               'Ok',
               {
-                duration: 3000,
+                duration: standardSnackBarDuration,
               },
             );
         }
@@ -184,7 +185,7 @@ export class AuthEffects {
     this.snackBar.open(
       await this.translate.get('dtapp.unexpectedError').toPromise(),
       null,
-      { duration: 3000 },
+      { duration: standardSnackBarDuration },
     );
   }
 
