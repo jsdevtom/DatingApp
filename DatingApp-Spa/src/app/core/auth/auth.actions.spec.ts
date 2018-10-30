@@ -6,7 +6,7 @@ import {
 
 describe('Auth Actions', () => {
   it('should create ActionAuthLogin action', () => {
-    const action = new ActionAuthLogin();
+    const action = new ActionAuthLogin({username: 'bob', password: 'hi'});
     expect(action.type).toEqual(AuthActionTypes.LOGIN);
   });
 
