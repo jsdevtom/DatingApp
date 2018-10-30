@@ -10,11 +10,12 @@ import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 import { environment } from '@env/environment';
 
 import { LocalStorageService } from './local-storage/local-storage.service';
-import { AuthEffects } from './auth/auth.effects';
+import { AuthEffects, TOKEN_KEY } from './auth/auth.effects';
 import { IsAuthenticatedGuardService } from './auth/is-authenticated-guard.service';
 import { AnimationsService } from './animations/animations.service';
 import { TitleService } from './title/title.service';
 import { metaReducers, reducers } from './core.state';
+import { JwtModule } from '@auth0/angular-jwt';
 
 @NgModule({
   imports: [
@@ -38,6 +39,14 @@ import { metaReducers, reducers } from './core.state';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
+    }),
+
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => localStorage.getItem(TOKEN_KEY),
+        whitelistedDomains: ['localhost:3001'],
+        blacklistedRoutes: ['localhost:3001/auth/']
+      }
     }),
 
     StoreRouterConnectingModule.forRoot(),
