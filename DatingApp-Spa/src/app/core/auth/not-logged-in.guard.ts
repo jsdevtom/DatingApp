@@ -8,13 +8,19 @@ import { Observable } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 import { AppState, selectIsAuthenticated } from '@app/core';
 import { MatSnackBar } from '@angular/material';
-import { map } from 'rxjs/operators';
+import { flatMap } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
+import { standardSnackBarDuration } from '@app/core/ui.constants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class NotLoggedInGuard implements CanActivate {
-  constructor(private store: Store<AppState>, private snackBar: MatSnackBar) {}
+  constructor(
+    private store: Store<AppState>,
+    private snackBar: MatSnackBar,
+    private translateService: TranslateService,
+  ) {}
 
   canActivate(
     next: ActivatedRouteSnapshot,
@@ -22,11 +28,16 @@ export class NotLoggedInGuard implements CanActivate {
   ): Observable<boolean> | Promise<boolean> | boolean {
     return this.store.pipe(
       select(selectIsAuthenticated),
-      map(isAuthenticated => {
+      flatMap(async isAuthenticated => {
         if (isAuthenticated) {
-          // TODO-Tom: i18n
-          // TODO-Tom: extract duration constant
-          this.snackBar.open('You are already logged in', 'Ok', {duration: 3000});
+          const message = (await this.translateService
+            .get('dtapp.login.alreadyLoggedIn')
+            .toPromise()) as string;
+
+          this.snackBar.open(message, 'Ok', {
+            duration: standardSnackBarDuration,
+          });
+
           return false;
         } else {
           return true;
