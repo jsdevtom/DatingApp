@@ -71,6 +71,7 @@
   "dtapp.settings.animations.elements": "Navigation page elements slide up",
 
   "dtapp.login.unauthorized": "Could not login with those credentials",
+  "dtapp.login.alreadyLoggedIn": "You are already logged in",
 
   "dtapp.login.successfulLogin": "Successfully logged in",
   "dtapp.login.successfulLogout": "Successfully logged out",
