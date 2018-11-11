@@ -1,0 +1,54 @@
+<div *ngIf="user | async as user" class="container mt-4">
+  <div class="row">
+    <div class="col-sm-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{user.knownAs}}</mat-card-title>
+          <mat-card-subtitle>{{user.age}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="user.photoUrl" [alt]="user.knownAs">
+        <mat-card-content>
+          <div>
+            <strong>Location:</strong>
+            <p>{{user.city}}, {{user.country}}</p>
+          </div>
+          <div>
+            <strong>Last Active:</strong>
+            <p>{{user.lastActive}}</p>
+          </div>
+          <div>
+            <strong>Member since:</strong>
+            <p>{{user.created}}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="btn-group d-flex flex-wrap">
+            <button mat-button class="flex-shrink-1 flex-grow-1">LIKE</button>
+            <button mat-button class="flex-shrink-1 flex-grow-1">MESSAGE</button>
+          </div>
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-sm-8">
+      <mat-tab-group>
+        <mat-tab label="About">
+          <h4>Description</h4>
+          <p>{{user.introduction}}</p>
+          <h4>Looking for</h4>
+          <p>{{user.lookingFor}}</p>
+        </mat-tab>
+        <mat-tab label="Interests">
+          <h4>Interests</h4>
+          <p>{{user.interests}}</p>
+        </mat-tab>
+        <mat-tab label="Photos">
+          <p>Photos will go here</p>
+        </mat-tab>
+        <mat-tab label="Messages">
+          <p>Messages will go here</p>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

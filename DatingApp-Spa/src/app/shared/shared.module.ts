@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TranslateModule } from '@ngx-translate/core';
 
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatGridListModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material';
@@ -35,8 +35,10 @@ import {
   faCheck,
   faCog,
   faEdit,
+  faEnvelope,
   faExclamationTriangle,
   faFilter,
+  faHeart,
   faLanguage,
   faLightbulb,
   faPaintBrush,
@@ -50,6 +52,7 @@ import {
   faTimes,
   faTrash,
   faUserCircle,
+  faUser,
   faWindowMaximize,
 } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -95,6 +98,9 @@ library.add(
   faWindowMaximize,
   faStream,
   faBook,
+  faUser,
+  faHeart,
+  faEnvelope,
 );
 
 const declarations = [
@@ -161,6 +167,7 @@ const declarations = [
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatGridListModule,
 
     FontAwesomeModule,
 

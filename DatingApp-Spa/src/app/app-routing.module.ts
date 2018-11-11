@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: 'app/examples/examples.module#ExamplesModule',
   },
   {
+    path: 'members',
+    loadChildren: 'app/features/member/member.module#MemberModule',
+  },
+  {
     path: 'login',
     loadChildren: 'app/features/login/login.module#LoginModule',
     canActivate: [NotLoggedInGuard],

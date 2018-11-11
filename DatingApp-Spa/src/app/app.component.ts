@@ -44,7 +44,10 @@ export class AppComponent implements OnInit, OnDestroy {
   year = new Date().getFullYear();
   logo = require('../assets/logo.png');
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br'];
-  navigation = [{ link: 'examples', label: 'dtapp.menu.examples' }];
+  navigation = [
+    { link: 'examples', label: 'dtapp.menu.examples' },
+    { link: 'members', label: 'dtapp.menu.members' },
+  ];
   navigationSideMenu = [
     ...this.navigation,
     { link: 'settings', label: 'dtapp.menu.settings' },
