@@ -12,7 +12,7 @@ namespace DatingApp.API.Helpers
             CreateMap<User, UserForListDto>()
                 .ForMember(
                     destination => destination.PhotoUrl,
-                    options => { options.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain)); }
+                    options => { options.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain).Url); }
                 )
                 .ForMember(
                     destination => destination.Age,
@@ -22,7 +22,7 @@ namespace DatingApp.API.Helpers
             CreateMap<User, UserForDetailedDto>()
                 .ForMember(
                     destination => destination.PhotoUrl,
-                    options => { options.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain)); }
+                    options => { options.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain).Url); }
                 )
                 .ForMember(
                     destination => destination.Age,
@@ -30,6 +30,8 @@ namespace DatingApp.API.Helpers
                 );
 
             CreateMap<Photo, PhotosForDetailedDto>();
+
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }

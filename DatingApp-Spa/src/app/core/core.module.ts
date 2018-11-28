@@ -16,9 +16,13 @@ import { AnimationsService } from './animations/animations.service';
 import { TitleService } from './title/title.service';
 import { metaReducers, reducers } from './core.state';
 import { JwtModule } from '@auth0/angular-jwt';
+import {UserModule} from '@app/features/user/user.module';
 
 @NgModule({
   imports: [
+    // singleton modules
+    UserModule,
+
     // angular
     CommonModule,
     HttpClientModule,
@@ -43,9 +47,9 @@ import { JwtModule } from '@auth0/angular-jwt';
 
     JwtModule.forRoot({
       config: {
-        tokenGetter: () => localStorage.getItem(TOKEN_KEY),
-        whitelistedDomains: ['localhost:3001'],
-        blacklistedRoutes: ['localhost:3001/auth/']
+        tokenGetter: () => new LocalStorageService().getItem(TOKEN_KEY),
+        whitelistedDomains: [environment.apiDomain],
+        blacklistedRoutes: [`http://${environment.apiDomain}/auth/`]
       }
     }),
 
