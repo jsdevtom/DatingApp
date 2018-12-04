@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DatingApp.API.Helpers;
 using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
@@ -13,7 +14,7 @@ namespace DatingApp.API.Data
         
         Task<bool> SaveAllAsync();
         
-        Task<IEnumerable<User>> GetUsersAsync();
+        Task<PagedList<User>> GetUsersAsync(UserParams userParams);
         
         Task<User> GetUserAsync(int id);
         
